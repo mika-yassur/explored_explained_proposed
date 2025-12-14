@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh; /* fits viewport exactly */
+}
+
+/* LEFT TEXT */
+.text-column {
+  width: 50%;
+  padding: 60px;
+  font-size: 32px; /* ~24pt */
+  text-align: justify;
+}
+
+.spacer {
+  height: 400px;
+}
+
+/* RIGHT IMAGE AREA */
+.image-column {
+  width: 50%;
+  position: relative;
+}
+
+.image-stack {
+  position: sticky;
+  top: 50px;
+  height: 80vh;
+}
+
+/* BASE IMAGE */
+.base-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  z-index: 1;
+}
+
+/* STACKING IMAGE */
+.stack-image {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  opacity: 0;
+  transition: top 0.6s ease, opacity 0.6s ease;
+}
+
+.intro-text {
+  font-size: 32px; /* 24pt */
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+.body-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+.final-images {
+  margin-top: 120px;
+}
+
+.text-column .final-images img {
+  display: block;
+  width: 200px;  /* keep your chosen size */
+  height: auto;
+  max-width: none;
+  margin-bottom: 120px;  /* increased spacing between images */
+}
+
+.large-image {
+  display: block;
+  width: 400px;  /* or whatever size you want */
+  max-width: 90%; /* prevents it from overflowing on small screens */
+  height: auto;   /* keeps the aspect ratio */
+  margin: 40px auto; /* centers the image and adds vertical spacing */
+}
+
+header {
+  padding: 20px; /* space around the header */
+}
+
+header nav a {
+  margin-right: 15px; /* space between links if you have multiple */
+  text-decoration: none; /* remove underline */
+  color: #333; /* text color */
+  font-weight: bold; /* optional emphasis */
+  padding: 8px 12px; /* adds clickable area around the link */
+  border-radius: 5px; /* rounded corners */
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background-color: #ddd; /* subtle hover effect */
+}
