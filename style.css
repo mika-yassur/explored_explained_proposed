@@ -62,7 +62,7 @@ body {
 .body-text p {
   font-size: 18px;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 40px;
   max-width: 90%;
 }
@@ -103,4 +103,92 @@ header nav a {
 
 header nav a:hover {
   background-color: #ddd; /* subtle hover effect */
+}
+
+/* Base paragraph style */
+.body-text p {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+/* Citations */
+.citation {
+  font-size: 0.95rem;
+  margin-left: 2rem;        /* indent */
+  text-indent: -1.5rem;     /* hanging indent */
+  color: #222;
+}
+
+/* Commentary */
+.commentary {
+  font-size: 1rem;
+  margin-left: 0;
+  color: #000;
+}
+
+.commentary-list {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;          /* MATCH commentary */
+  line-height: 1.5;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.commentary-list li {
+  font-size: 1rem;          /* force consistency */
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.pdf-container {
+  width: 100%;
+  height: 90vh;        /* nearly full viewport height */
+  margin: 2rem 0 4rem 0;
+  border: 1px solid #ccc; /* optional, makes container visible for testing */
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Table of Contents container */
+.toc {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* "Table of Contents" title */
+.toc-title {
+  font-size: 1.1rem;       /* slightly larger */
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+/* TOC list */
+.toc-list {
+  list-style: none;        /* no bullets */
+  padding-left: 2rem;      /* indentation */
+  margin: 0;
+}
+
+/* TOC list items */
+.toc-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Links */
+.toc-list a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #bbb;
+}
+
+.toc-list a:hover {
+  border-bottom-color: #000;
 }
